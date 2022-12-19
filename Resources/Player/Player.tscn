@@ -30,3 +30,9 @@ texture = ExtResource( 1 )
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 position = Vector2( -2, 6 )
 polygon = PoolVector2Array( -200, -60, -223, -46, -220, 69, -192, 83, 205, 89, 217, 75, 216, -9, 90, -51, 6, -61 )
+
+[node name="GameOverTimer" type="Timer" parent="."]
+wait_time = 5.0
+one_shot = true
+
+[connection signal="timeout" from="GameOverTimer" to="." method="_on_GameOverTimer_timeout"]

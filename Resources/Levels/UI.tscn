@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Resources/font/FredokaOne-Regular.otf" type="DynamicFontData" id=1]
 [ext_resource path="res://Resources/assets/Images/Pickups/Coin5.png" type="Texture" id=2]
+[ext_resource path="res://Resources/assets/Images/Pickups/Fuel.png" type="Texture" id=3]
 
 [sub_resource type="DynamicFont" id=1]
 size = 64
@@ -10,13 +11,38 @@ outline_color = Color( 0, 0, 0, 1 )
 use_filter = true
 font_data = ExtResource( 1 )
 
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.180392, 0.776471, 0, 1 )
+border_width_top = 6
+border_color = Color( 1, 1, 1, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.443137, 0.443137, 0.443137, 1 )
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 6
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+expand_margin_left = 7.0
+expand_margin_right = 7.0
+expand_margin_top = 7.0
+expand_margin_bottom = 7.0
+
 [node name="UI" type="CanvasLayer"]
 
 [node name="Coin" type="TextureRect" parent="."]
-margin_left = 45.0
-margin_top = 28.0
-margin_right = 149.0
-margin_bottom = 132.0
+margin_left = 53.0
+margin_top = 223.0
+margin_right = 157.0
+margin_bottom = 327.0
 texture = ExtResource( 2 )
 expand = true
 
@@ -27,3 +53,21 @@ margin_right = 261.0
 margin_bottom = 97.0
 custom_fonts/font = SubResource( 1 )
 text = "0"
+
+[node name="Fuel" type="TextureRect" parent="."]
+margin_left = 48.0
+margin_top = 89.0
+margin_right = 162.0
+margin_bottom = 203.0
+texture = ExtResource( 3 )
+expand = true
+
+[node name="ProgressBar" type="ProgressBar" parent="Fuel"]
+margin_left = 139.0
+margin_top = 41.0
+margin_right = 441.0
+margin_bottom = 90.0
+custom_styles/fg = SubResource( 3 )
+custom_styles/bg = SubResource( 2 )
+value = 50.0
+percent_visible = false
