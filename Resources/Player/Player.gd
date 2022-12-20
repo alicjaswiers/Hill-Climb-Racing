@@ -5,13 +5,14 @@ var speed = 60000
 var max_speed = 50
 
 var fuel = 100
+var dead = false
 
 func _ready():
 	wheels = get_tree().get_nodes_in_group("wheel")
 	get_parent().update_fuel_UI(fuel)
 
 func _physics_process(delta):
-	if fuel > 0:
+	if fuel > 0 && !dead:
 		$GameOverTimer.stop()
 		if Input.is_action_pressed("ui_right"):
 			use_fuel(delta)
@@ -27,6 +28,10 @@ func _physics_process(delta):
 		else:
 			if $GameOverTimer.is_stopped():
 				$GameOverTimer.start()
+
+	if $Head.rotation_degrees > 90 || $Head.rotation_degrees < -90 && !dead:
+		dead = true
+		$Head/HeadSpring.node_b = ""
 
 func refuel():
 	fuel = 100
