@@ -392,7 +392,7 @@ fill_mesh_offset = 0.0
 render_offset = 0.0
 
 [node name="Level1" type="Node2D"]
-position = Vector2( 0, -7 )
+position = Vector2( -9344, 249 )
 script = ExtResource( 12 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
@@ -439,7 +439,13 @@ position = Vector2( -1712, -144 )
 [node name="UI" parent="." instance=ExtResource( 14 )]
 
 [node name="Fuel" parent="." instance=ExtResource( 15 )]
-position = Vector2( -1260, -122 )
+position = Vector2( -438, -114 )
+
+[node name="Coin" parent="Fuel" instance=ExtResource( 13 )]
+position = Vector2( 911, 361 )
+
+[node name="Coin2" parent="Fuel" instance=ExtResource( 13 )]
+position = Vector2( 989, -391 )
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
@@ -461,3 +467,24 @@ motion_mirroring = Vector2( 3000, 0 )
 position = Vector2( 0, -1208 )
 texture = ExtResource( 16 )
 centered = false
+
+[node name="Coin4" parent="." instance=ExtResource( 13 )]
+position = Vector2( 4645, -974 )
+
+[node name="Coin5" parent="." instance=ExtResource( 13 )]
+position = Vector2( 8492, -385 )
+
+[node name="Coin6" parent="." instance=ExtResource( 13 )]
+position = Vector2( 19172, 1108 )
+
+[node name="Fuel2" parent="." instance=ExtResource( 15 )]
+position = Vector2( 5980, 226 )
+
+[node name="Coin7" parent="." instance=ExtResource( 13 )]
+position = Vector2( 18425, -815 )
+
+[node name="Coin8" parent="." instance=ExtResource( 13 )]
+position = Vector2( 19738, -996 )
+
+[node name="Coin9" parent="." instance=ExtResource( 13 )]
+position = Vector2( 21367, -680 )
