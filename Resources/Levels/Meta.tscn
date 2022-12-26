@@ -1,0 +1,52 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Resources/assets/Images/Other/Flag.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 15.25, 134.75 )
+
+[sub_resource type="Animation" id=2]
+resource_name = "Flag"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, 1 ), Vector2( 0, 2 ), Vector2( 0, 3 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ) ]
+}
+
+[node name="Meta" type="Node2D"]
+
+[node name="Flag" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+vframes = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Flag"]
+position = Vector2( -34.75, 14.25 )
+shape = SubResource( 1 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Flag"]
+playback_speed = 2.29
+anims/Flag = SubResource( 2 )
+anims/RESET = SubResource( 3 )
