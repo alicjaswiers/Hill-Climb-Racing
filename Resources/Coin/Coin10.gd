@@ -13,5 +13,5 @@ func _on_Coin2_body_entered(body):
 		$CollisionShape2D.set_deferred("disabled", true)
 		picked_up = true
 
-func _on_AnimationPlayer_animation_finished(anim_name):
+func _on_AnimationPlayer_animation_finished(_anim_name):
 	queue_free()
