@@ -18,7 +18,6 @@ func _physics_process(delta):
 	
 	
 	if fuel > 0 && !dead:
-		$UI.start()
 		$GameOverTimer.stop()
 		if Input.is_action_pressed("ui_right"):
 			driving += 1

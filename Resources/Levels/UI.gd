@@ -1,7 +1,7 @@
 extends CanvasLayer
 
 
-func start():
+func _on_UI_ready():
 	$MessageLabel.hide()
 	$NextLevelButton.hide()
 
