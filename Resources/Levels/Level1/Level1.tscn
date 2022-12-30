@@ -432,7 +432,7 @@ drag_margin_left = 0.62
 editor_draw_drag_margin = true
 
 [node name="Coin" parent="." instance=ExtResource( 13 )]
-position = Vector2( -2541, -338 )
+position = Vector2( 12163, 110 )
 
 [node name="Coin" parent="Coin" instance=ExtResource( 13 )]
 position = Vector2( 14162, 596 )
@@ -493,6 +493,9 @@ position = Vector2( 19172, 1108 )
 [node name="Fuel2" parent="." instance=ExtResource( 15 )]
 position = Vector2( 5980, 226 )
 
+[node name="Fuel3" parent="." instance=ExtResource( 15 )]
+position = Vector2( 21292, 1458 )
+
 [node name="Coin7" parent="." instance=ExtResource( 13 )]
 position = Vector2( 18425, -815 )
 
@@ -503,13 +506,13 @@ position = Vector2( 19738, -996 )
 position = Vector2( 21367, -680 )
 
 [node name="Meta" parent="." instance=ExtResource( 18 )]
-position = Vector2( 3772, -954 )
+position = Vector2( 679, 204 )
 
 [node name="Coin12" parent="." instance=ExtResource( 19 )]
-position = Vector2( -3063, -205 )
+position = Vector2( 6041, -509 )
 
 [node name="Coin13" parent="." instance=ExtResource( 20 )]
-position = Vector2( -2809, -292 )
+position = Vector2( 15351, -1028 )
 
 [node name="Coin14" parent="." instance=ExtResource( 21 )]
-position = Vector2( -2368, -306 )
+position = Vector2( 3356, -1007 )
