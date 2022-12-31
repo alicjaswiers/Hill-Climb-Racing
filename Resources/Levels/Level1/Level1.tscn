@@ -453,12 +453,12 @@ position = Vector2( -1559, -180 )
 position = Vector2( 249, 238 )
 
 [node name="Coin11" parent="." instance=ExtResource( 13 )]
-position = Vector2( 399, -223 )
+position = Vector2( 2073, -451 )
 
 [node name="UI" parent="." instance=ExtResource( 14 )]
 
 [node name="Fuel" parent="." instance=ExtResource( 15 )]
-position = Vector2( -662, -123 )
+position = Vector2( 3943, -998 )
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
@@ -485,13 +485,13 @@ centered = false
 position = Vector2( 4645, -974 )
 
 [node name="Coin5" parent="." instance=ExtResource( 13 )]
-position = Vector2( 8492, -385 )
+position = Vector2( 8549, -290 )
 
 [node name="Coin6" parent="." instance=ExtResource( 13 )]
 position = Vector2( 19172, 1108 )
 
 [node name="Fuel2" parent="." instance=ExtResource( 15 )]
-position = Vector2( 5980, 226 )
+position = Vector2( 7141, -535 )
 
 [node name="Fuel3" parent="." instance=ExtResource( 15 )]
 position = Vector2( 21292, 1458 )
@@ -503,10 +503,10 @@ position = Vector2( 18425, -815 )
 position = Vector2( 19738, -996 )
 
 [node name="Coin9" parent="." instance=ExtResource( 13 )]
-position = Vector2( 21367, -680 )
+position = Vector2( 17790, -299 )
 
 [node name="Meta" parent="." instance=ExtResource( 18 )]
-position = Vector2( 679, 204 )
+position = Vector2( 29940, 458 )
 
 [node name="Coin12" parent="." instance=ExtResource( 19 )]
 position = Vector2( 6041, -509 )
