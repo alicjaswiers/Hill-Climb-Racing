@@ -506,7 +506,7 @@ position = Vector2( 19738, -996 )
 position = Vector2( 17790, -299 )
 
 [node name="Meta" parent="." instance=ExtResource( 18 )]
-position = Vector2( 29940, 458 )
+position = Vector2( -1022, -260 )
 
 [node name="Coin12" parent="." instance=ExtResource( 19 )]
 position = Vector2( 6041, -509 )
